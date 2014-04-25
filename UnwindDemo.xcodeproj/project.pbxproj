@@ -14,13 +14,15 @@
 		3BB416A7190A9999007A8658 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB416A6190A9999007A8658 /* main.m */; };
 		3BB416AB190A9999007A8658 /* SFSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB416AA190A9999007A8658 /* SFSAppDelegate.m */; };
 		3BB416AE190A9999007A8658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB416AC190A9999007A8658 /* Main.storyboard */; };
-		3BB416B1190A9999007A8658 /* SFSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB416B0190A9999007A8658 /* SFSViewController.m */; };
 		3BB416B3190A9999007A8658 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BB416B2190A9999007A8658 /* Images.xcassets */; };
 		3BB416BA190A9999007A8658 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB416B9190A9999007A8658 /* XCTest.framework */; };
 		3BB416BB190A9999007A8658 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB4169A190A9999007A8658 /* Foundation.framework */; };
 		3BB416BC190A9999007A8658 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB4169E190A9999007A8658 /* UIKit.framework */; };
 		3BB416C4190A9999007A8658 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BB416C2190A9999007A8658 /* InfoPlist.strings */; };
 		3BB416C6190A9999007A8658 /* UnwindDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB416C5190A9999007A8658 /* UnwindDemoTests.m */; };
+		3BB416D1190A9FAC007A8658 /* SFSWeightInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB416D0190A9FAC007A8658 /* SFSWeightInfo.m */; };
+		3BB416D4190AA247007A8658 /* SFSWeighInsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB416D3190AA247007A8658 /* SFSWeighInsTableViewController.m */; };
+		3BB416D7190ACA68007A8658 /* SFSWeighInDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB416D6190ACA68007A8658 /* SFSWeighInDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +47,18 @@
 		3BB416A9190A9999007A8658 /* SFSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFSAppDelegate.h; sourceTree = "<group>"; };
 		3BB416AA190A9999007A8658 /* SFSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFSAppDelegate.m; sourceTree = "<group>"; };
 		3BB416AD190A9999007A8658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3BB416AF190A9999007A8658 /* SFSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFSViewController.h; sourceTree = "<group>"; };
-		3BB416B0190A9999007A8658 /* SFSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFSViewController.m; sourceTree = "<group>"; };
 		3BB416B2190A9999007A8658 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3BB416B8190A9999007A8658 /* UnwindDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnwindDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB416B9190A9999007A8658 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3BB416C1190A9999007A8658 /* UnwindDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnwindDemoTests-Info.plist"; sourceTree = "<group>"; };
 		3BB416C3190A9999007A8658 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3BB416C5190A9999007A8658 /* UnwindDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnwindDemoTests.m; sourceTree = "<group>"; };
+		3BB416CF190A9FAC007A8658 /* SFSWeightInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSWeightInfo.h; sourceTree = "<group>"; };
+		3BB416D0190A9FAC007A8658 /* SFSWeightInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSWeightInfo.m; sourceTree = "<group>"; };
+		3BB416D2190AA247007A8658 /* SFSWeighInsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSWeighInsTableViewController.h; sourceTree = "<group>"; };
+		3BB416D3190AA247007A8658 /* SFSWeighInsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSWeighInsTableViewController.m; sourceTree = "<group>"; };
+		3BB416D5190ACA68007A8658 /* SFSWeighInDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSWeighInDetailViewController.h; sourceTree = "<group>"; };
+		3BB416D6190ACA68007A8658 /* SFSWeighInDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSWeighInDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +118,15 @@
 		3BB416A0190A9999007A8658 /* UnwindDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3BB416CF190A9FAC007A8658 /* SFSWeightInfo.h */,
+				3BB416D0190A9FAC007A8658 /* SFSWeightInfo.m */,
 				3BB416A9190A9999007A8658 /* SFSAppDelegate.h */,
 				3BB416AA190A9999007A8658 /* SFSAppDelegate.m */,
 				3BB416AC190A9999007A8658 /* Main.storyboard */,
-				3BB416AF190A9999007A8658 /* SFSViewController.h */,
-				3BB416B0190A9999007A8658 /* SFSViewController.m */,
+				3BB416D2190AA247007A8658 /* SFSWeighInsTableViewController.h */,
+				3BB416D3190AA247007A8658 /* SFSWeighInsTableViewController.m */,
+				3BB416D5190ACA68007A8658 /* SFSWeighInDetailViewController.h */,
+				3BB416D6190ACA68007A8658 /* SFSWeighInDetailViewController.m */,
 				3BB416B2190A9999007A8658 /* Images.xcassets */,
 				3BB416A1190A9999007A8658 /* Supporting Files */,
 			);
@@ -250,9 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BB416D7190ACA68007A8658 /* SFSWeighInDetailViewController.m in Sources */,
 				3BB416A7190A9999007A8658 /* main.m in Sources */,
 				3BB416AB190A9999007A8658 /* SFSAppDelegate.m in Sources */,
-				3BB416B1190A9999007A8658 /* SFSViewController.m in Sources */,
+				3BB416D1190A9FAC007A8658 /* SFSWeightInfo.m in Sources */,
+				3BB416D4190AA247007A8658 /* SFSWeighInsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +469,7 @@
 				3BB416CB190A9999007A8658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BB416CC190A9999007A8658 /* Build configuration list for PBXNativeTarget "UnwindDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +478,7 @@
 				3BB416CE190A9999007A8658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

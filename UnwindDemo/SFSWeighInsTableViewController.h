@@ -1,5 +1,5 @@
 //
-//  SFSViewController.h
+//  SFSWeighInsTableViewController.h
 //  UnwindDemo
 //
 //  Created by BJ Miller on 4/25/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SFSViewController : UIViewController
+@interface SFSWeighInsTableViewController : UITableViewController
 
 @end
