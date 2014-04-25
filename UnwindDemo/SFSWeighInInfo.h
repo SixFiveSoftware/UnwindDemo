@@ -1,5 +1,5 @@
 //
-//  SFSWeightInfo.h
+//  SFSWeighInInfo.h
 //  UnwindDemo
 //
 //  Created by BJ Miller on 4/25/14.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SFSWeightInfo : NSObject
+@interface SFSWeighInInfo : NSObject
 
 @property (nonatomic) NSInteger idNumber;
 @property (nonatomic, copy) NSString *name;

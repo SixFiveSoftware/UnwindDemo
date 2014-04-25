@@ -1,14 +1,14 @@
 //
-//  SFSWeightInfo.m
+//  SFSWeighInInfo.m
 //  UnwindDemo
 //
 //  Created by BJ Miller on 4/25/14.
 //  Copyright (c) 2014 Six Five Software, LLC. All rights reserved.
 //
 
-#import "SFSWeightInfo.h"
+#import "SFSWeighInInfo.h"
 
-@implementation SFSWeightInfo
+@implementation SFSWeighInInfo
 
 - (NSString *)friendlyDate
 {

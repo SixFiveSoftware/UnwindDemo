@@ -7,10 +7,10 @@
 //
 
 #import "SFSWeighInDetailViewController.h"
-#import "SFSWeightInfo.h"
+#import "SFSWeighInInfo.h"
 
 @interface SFSWeighInDetailViewController ()
-@property (nonatomic, strong) SFSWeightInfo *weighInInfo;
+@property (nonatomic, strong) SFSWeighInInfo *weighInInfo;
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *weightField;
 @property (weak, nonatomic) IBOutlet UILabel *dateField;
@@ -32,7 +32,7 @@
     self.dateField.text = [self.weighInInfo friendlyDate];
 }
 
-- (void)setWeighInInfo:(SFSWeightInfo *)weighInInfo
+- (void)setWeighInInfo:(SFSWeighInInfo *)weighInInfo
 {
     _weighInInfo = weighInInfo;
 }

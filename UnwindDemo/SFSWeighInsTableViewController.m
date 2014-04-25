@@ -7,7 +7,7 @@
 //
 
 #import "SFSWeighInsTableViewController.h"
-#import "SFSWeightInfo.h"
+#import "SFSWeighInInfo.h"
 #import "SFSWeighInDetailViewController.h"
 
 @interface SFSWeighInsTableViewController () <SFSWeighInInfoDelegate>
@@ -27,19 +27,19 @@
 {
     self.weighIns = [NSMutableArray array];
     
-    SFSWeightInfo *weighIn1 = [SFSWeightInfo new];
+    SFSWeighInInfo *weighIn1 = [SFSWeighInInfo new];
     weighIn1.idNumber = 0;
     weighIn1.name = @"Bobby";
     weighIn1.weight = @(200);
     weighIn1.date = [NSDate date];
     
-    SFSWeightInfo *weighIn2 = [SFSWeightInfo new];
+    SFSWeighInInfo *weighIn2 = [SFSWeighInInfo new];
     weighIn2.idNumber = 1;
     weighIn2.name = @"Susie";
     weighIn2.weight = @(140);
     weighIn2.date = [NSDate date];
     
-    SFSWeightInfo *weighIn3 = [SFSWeightInfo new];
+    SFSWeighInInfo *weighIn3 = [SFSWeighInInfo new];
     weighIn3.idNumber = 2;
     weighIn3.name = @"Napoleon Dynamite";
     weighIn3.weight = @(125);
@@ -66,12 +66,12 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    SFSWeightInfo *weightInfo = self.weighIns[indexPath.row];
+    SFSWeighInInfo *weighInInfo = self.weighIns[indexPath.row];
     
-    cell.textLabel.text = weightInfo.name;
+    cell.textLabel.text = weighInInfo.name;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ lbs on %@",
-                                 weightInfo.weight,
-                                 [weightInfo friendlyDate]];
+                                 weighInInfo.weight,
+                                 [weighInInfo friendlyDate]];
     
     return cell;
 }
@@ -82,7 +82,7 @@
 {
     UITableViewCell *cell = (UITableViewCell *)sender;
     NSUInteger cellIndex = [self.tableView indexPathForCell:cell].row;
-    SFSWeightInfo *weighInInfo = self.weighIns[cellIndex];
+    SFSWeighInInfo *weighInInfo = self.weighIns[cellIndex];
     
     SFSWeighInDetailViewController *detailVC = segue.destinationViewController;
     [detailVC setDelegate:self];
@@ -91,7 +91,7 @@
 
 #pragma mark - SFSWeighInInfoDelegate methods
 
-- (void)weighInDetailViewController:(SFSWeighInDetailViewController *)vc didUpdateWeighInInfo:(SFSWeightInfo *)weighInInfo
+- (void)weighInDetailViewController:(SFSWeighInDetailViewController *)vc didUpdateWeighInInfo:(SFSWeighInInfo *)weighInInfo
 {
     [self.weighIns replaceObjectAtIndex:weighInInfo.idNumber withObject:weighInInfo];
     

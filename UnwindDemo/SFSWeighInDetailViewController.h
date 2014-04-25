@@ -8,21 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@class SFSWeightInfo;
+@class SFSWeighInInfo;
 @class SFSWeighInDetailViewController;
 
 @protocol SFSWeighInInfoDelegate <NSObject>
 
 @optional
 
-- (void)weighInDetailViewController:(SFSWeighInDetailViewController *)vc didUpdateWeighInInfo:(SFSWeightInfo *)weighInInfo;
+- (void)weighInDetailViewController:(SFSWeighInDetailViewController *)vc didUpdateWeighInInfo:(SFSWeighInInfo *)weighInInfo;
 
 @end
 
 
 @interface SFSWeighInDetailViewController : UIViewController
 
-- (void)setWeighInInfo:(SFSWeightInfo *)weighInInfo;
+- (void)setWeighInInfo:(SFSWeighInInfo *)weighInInfo;
 
 @property (weak, nonatomic) id<SFSWeighInInfoDelegate> delegate;
 
